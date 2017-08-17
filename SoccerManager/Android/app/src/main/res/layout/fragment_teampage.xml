@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment4">
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_box"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/createTeamOrTeamInfo"
+            android:background="@drawable/rectangle_stroke_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="구단 생성"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/formationChange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle_stroke_white"
+            android:text="포메이션 변경"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/teamMemberShow"
+            android:background="@drawable/rectangle_stroke_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="팀원 정보 조회"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

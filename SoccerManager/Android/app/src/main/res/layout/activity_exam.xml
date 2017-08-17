@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiwonkim.soccermanager.Main.Mypage.Exam.ExamActivity"
+    android:background="@drawable/fragment3">
+
+    <RelativeLayout
+        android:id="@+id/layout_exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_box"
+        >
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="다음"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@drawable/rectangle_stroke_white"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/prevBtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toLeftOf="@+id/nextBtn"-->
+            <!--android:text="이전"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="18sp"-->
+            <!--android:background="@drawable/rectangle_stroke_white"-->
+            <!--android:visibility="invisible"/>-->
+        <TextView
+            android:id="@+id/examText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="1. 100m 달리기 기록을 입력해 주세요\n (소수점 한자리 까지. ex- 12.8)"
+            />
+
+        <EditText
+            android:id="@+id/editExam1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/examText1"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editExam2"
+            />
+
+        <TextView
+            android:id="@+id/examText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/editExam1"
+            android:layout_marginTop="30dp"
+            android:text="2. 3km 오래달리기의 기록을 입력해 주세요.\n (소수점 둘째자리 까지 ex- 12.53)"
+            />
+
+        <EditText
+            android:id="@+id/editExam2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/examText2"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editExam3"
+            />
+
+        <TextView
+            android:id="@+id/examText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/editExam2"
+            android:layout_marginTop="30dp"
+            android:text="3. 양 끝 거리 240cm 사이드 스탭의 기록을\n 입력해 주세요. (ex- 35)"
+            />
+
+        <EditText
+            android:id="@+id/editExam3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/examText3"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editExam4"
+            />
+
+        <TextView
+            android:id="@+id/examText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/editExam3"
+            android:layout_marginTop="30dp"
+            android:text="4. 제자리 멀리뛰기의 기록을 입력해 주세요. \n(ex- 250)"
+            />
+
+        <EditText
+            android:id="@+id/editExam4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/examText4"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/nextBtn"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment3">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_box"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/exam"
+            android:background="@drawable/rectangle_stroke_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="실력 측정"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/myInfo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangle_stroke_white"
+            android:text="내 정보"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/setting"
+            android:background="@drawable/rectangle_stroke_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="설정"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

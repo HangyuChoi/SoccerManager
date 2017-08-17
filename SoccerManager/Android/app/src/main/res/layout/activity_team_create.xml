@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiwonkim.soccermanager.Main.Mypage.Exam.ExamActivity"
+    android:background="@drawable/fragment3">
+
+    <RelativeLayout
+        android:id="@+id/layout_exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_box"
+        >
+
+        <TextView
+            android:id="@+id/textviewCreate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="구단명을 적어주세요"
+            />
+
+        <EditText
+            android:id="@+id/createTeamName"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textviewCreate1"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editExam2"
+            />
+
+        <TextView
+            android:id="@+id/textviewCreate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_below="@+id/createTeamName"
+            android:layout_marginTop="30dp"
+            android:text="활동 지역을 선택해 주세요."
+            />
+
+        <EditText
+            android:id="@+id/teamLocation"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textviewCreate2"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/editExam3"
+            />
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생성하기"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:background="@drawable/rectangle_stroke_white"/>
+
+    </RelativeLayout>
+</RelativeLayout>

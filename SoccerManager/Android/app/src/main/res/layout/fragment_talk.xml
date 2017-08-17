@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment5">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle_box">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/talk_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Team Talk"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:background="#000000"/>
+            <Button
+                android:id="@+id/talk_write_btn"
+                android:layout_alignParentRight="true"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:text="+"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:background="@drawable/rectangle_stroke_white"
+                android:layout_margin="5dp"/>
+
+        </RelativeLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerTalk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

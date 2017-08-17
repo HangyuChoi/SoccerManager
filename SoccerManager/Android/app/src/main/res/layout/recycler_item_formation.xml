@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/formation_item"
+    android:orientation="vertical" android:layout_width="40dp"
+    android:layout_height="60dp" android:background="#00000000">
+    <ImageView
+        android:id="@+id/recycler_playerImg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/man"/>
+
+    <TextView
+        android:id="@+id/recycler_playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="김지원"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"/>
+</LinearLayout>

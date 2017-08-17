@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/talk_read_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/talk_read_name"
+        android:layout_below="@+id/talk_read_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성자"
+        android:textColor="#dddddd"
+        />
+
+    <TextView
+        android:id="@+id/talk_read_time"
+        android:layout_below="@+id/talk_read_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성 시간"
+        android:layout_alignParentRight="true"
+        android:textColor="#dddddd"/>
+
+    <TextView
+        android:id="@+id/talk_read_detail"
+        android:layout_below="@+id/talk_read_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내용"
+        android:textSize="17sp"
+        android:textColor="#eeeeee"/>
+</RelativeLayout>

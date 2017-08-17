@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiwonkim.soccermanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Application.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".Main.Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main.Regist.RegistActivity" />
+        <activity android:name=".Main.MainActivity" />
+        <activity
+            android:name=".Main.SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Main.TeamPage.Formation.FormationActivity" />
+        <activity android:name=".Main.Mypage.Exam.ExamActivity" />
+        <activity android:name=".Main.Mypage.Exam.ExamResultActivity" />
+        <activity android:name=".Main.Mypage.MyInfo.MyInfoActivity" />
+        <activity android:name=".Main.Mypage.SettingActivity" />
+        <activity android:name=".Main.TeamPage.TeamManage.CreateTeam.TeamCreateActivity" />
+        <activity android:name=".Main.TeamPage.TeamManage.FindTeamData.FindTeamDataActivity" />
+        <activity android:name=".Main.TeamPage.TeamManage.FindTeamMember.FindAllMemberActivity"></activity>
+    </application>
+
+</manifest>
